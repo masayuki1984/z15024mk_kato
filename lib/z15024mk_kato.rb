@@ -1,9 +1,8 @@
 require "z15024mk_kato/version"
 require "pebbles-soreyuke"
 
-
-module Z15025mkKato
-  def soreyuke(count)
+module Z15024mkKato
+  def soreyuke(count = 20)
     (1..count).each do |num|
       if num % 15 == 0
           puts Pebbles::Soreyuke.AA('apm', 'FizzBuzz')            
@@ -16,6 +15,6 @@ module Z15025mkKato
       end
     end
   end
-  
+
   module_function :soreyuke
 end
